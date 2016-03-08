@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<body bgcolor="#E6E6FA">
+    <h1>sex project</h1>
+    <p class="center">
+      This is inventory manager
+    </p>
+    <br>
+
+            Searching Product: <input id = "barcode" type="text" name="barcode_query"> <br>
+	    Selling Price:     <input id ="price" type="text" name = "sellingprice"> <br>
+            <button onclick="calculateMargin(document.getElementById('barcode'),document.getElementById('price'))">calcuateMargin</button> 
+
+
+    <br>
+   
+            Searching Product: <input id="barcode2" type="text" name="barcode_query"> <br>
+	    Margin :     <input id="margin" type="text" name = "Margin"> <br>
+            <button onclick="calculateSellingPrice(document.getElementById('barcode2'),document.getElementById('margin'))">calculateSellingPrice</button> 
+
+	
+
+
+     <div id = "product"></div>
+     <div id = "sell"> </div>
+     <div id = "mar"></div>
+    <br>
+{% endblock %}
