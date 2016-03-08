@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/qwest.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/calculate.js') }}"></script>
+    <title>Inventory Manager</title>
+        <!-- ... other head content here ... -->
+</head>
+<body>
+     <div class="center">
+    {% block content %}{% endblock %}
+     </div>
+    <!-- ... body content here ... -->
+</body>
+
+</html>
+
+
